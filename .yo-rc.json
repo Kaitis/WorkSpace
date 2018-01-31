@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitHubOrganization": "Kaitis",
+    "baseName": "WorkSpace",
+    "packageName": "com.workspace",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhipsterVersion": "4.14.0",
+    "packageFolder": "com/workspace",
+    "jwtSecretKey": "36bc492b3ecdf6f5c572635a40b349c69cb423be",
+    "jhiPrefix": "jhi"
+  }
+}

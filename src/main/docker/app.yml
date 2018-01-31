@@ -1,0 +1,19 @@
+version: '2'
+services:
+    workspace-app:
+        image: workspace
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://workspace-mysql:3306/workspace?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=workspace-elasticsearch:9300
+        ports:
+            - 8080:8080
+    workspace-mysql:
+        extends:
+            file: mysql.yml
+            service: workspace-mysql
+    workspace-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: workspace-elasticsearch
